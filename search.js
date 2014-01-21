@@ -10,7 +10,8 @@ $(document).ready(function() {
 			data: JSON.stringify({searchTerm: input}),
 			error: ajaxFailure,
 			success: function(data){
-				alert("success: " + data);//$('#results').append(results);
+				alert("success: " + data);//
+				$('#results').append(results);
 			}
 		}) 
 	});
