@@ -11,17 +11,11 @@ $(document).ready(function() {
 			error: ajaxFailure,
 			success: function(data){
 				alert("success: " + data);//
-				$('#results').append(results);
+				$('#results').append(data);
 			}
 		}) 
 	});
 });
-
-//this displayed a html element after the ajaxfailure
-function display(results){
-	alert(results);
-	$('#results').append(results);
-}
 
 function ajaxFailure(){
 	alert("ajax failure");
