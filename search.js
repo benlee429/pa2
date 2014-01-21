@@ -6,7 +6,7 @@ $(document).ready(function() {
 			url: "WebService1.asmx/GetQuery", 
 			contentType: "application/json; charset=utf-8",
 			type: "POST",
-			dataType: "json", //string
+			dataType: "json", //text
 			data: JSON.stringify({searchTerm: input}),
 			error: ajaxFailure,
 			success: function(data){
