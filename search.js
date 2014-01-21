@@ -3,7 +3,7 @@ $(document).ready(function() {
 	$('#search').keypress(function(){
 		input = $('#search').val();
 		$.ajax({
-			url: "search2.aspx/GetQuery", 
+			url: "WebService1.asmx/GetQuery", 
 			contentType: "application/json; charset=utf-8",
 			type: "POST",
 			dataType: "text",
