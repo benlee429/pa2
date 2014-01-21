@@ -10,7 +10,7 @@ $(document).ready(function() {
 			data: JSON.stringify({searchTerm: input}),
 			error: ajaxFailure,
 			success: function(data){
-				alert(data);
+				alert(data.d);
 				var newTerm = $('<li class="suggesti">').text('Test message here');
 				$('#results').append(newTerm);
 			}
@@ -18,6 +18,6 @@ $(document).ready(function() {
 	});
 });
 
-function ajaxFailure(){
-	alert("ajax failure");
+function ajaxFailure(request, status, error){
+	alert("ajax failure: " request.statusText);
 }
