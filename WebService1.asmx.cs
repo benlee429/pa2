@@ -14,7 +14,7 @@ namespace MyTrieSpace
     public class WebService : System.Web.Services.WebService
     {
         [WebMethod]
-        public static string GetQuery(string searchTerm)
+        public string GetQuery(string searchTerm)
         {
             string suggestions = "getquery test";
             return suggestions;
