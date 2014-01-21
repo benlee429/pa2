@@ -6,7 +6,7 @@ using System.Web.Services;
 
 namespace MyTrieSpace
 {
-    //[WebService(Namespace = "http://tempuri.org/")]
+    [WebService(Namespace = "http://tempuri.org/")]
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
     [System.ComponentModel.ToolboxItem(false)]
     // To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line. 
@@ -16,7 +16,7 @@ namespace MyTrieSpace
         [WebMethod]
         public static string GetQuery(string searchTerm)
         {
-            String suggestions = "getquery test";
+            string suggestions = "getquery test";
             return suggestions;
         }
     }
