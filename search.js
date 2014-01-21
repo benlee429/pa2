@@ -12,7 +12,7 @@ $(document).ready(function() {
 			success: function(data){
 				alert(data);
 				var newTerm = $( document.createElement('div') );
-				newTerm.text(data.d);
+				newTerm.text = ("div text test");
 				$('#results').append(newTerm);
 			}
 		}) 
