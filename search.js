@@ -7,7 +7,7 @@ $(document).ready(function() {
 			contentType: "application/json; charset=utf-8",
 			type: "POST",
 			dataType: "text",
-			data: {searchTerm: input},//JSON.stringify()
+			data: JSON.stringify({searchTerm: input}),
 			error: ajaxFailure,
 			success: function(data){
 				alert(data);
