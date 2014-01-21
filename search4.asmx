@@ -1,4 +1,4 @@
-﻿<%@ WebService Language="C#" Class="WebService1" %>
+﻿<%@ WebService Language="C#" Class="Search3" %>
 
 using System;
 using System.Collections;
