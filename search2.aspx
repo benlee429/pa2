@@ -4,6 +4,7 @@
     [WebMethod]
     public static string GetQuery(string searchTerm)
     {
-        return "<p>" + searchTerm + "</p>";
+        String suggestions = "getquery test";
+        return suggestions;
     }
 </script>
