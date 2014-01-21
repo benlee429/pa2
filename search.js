@@ -10,6 +10,7 @@ $(document).ready(function() {
 			data: JSON.stringify({searchTerm: input}),
 			error: ajaxFailure,
 			success: function(data){
+				alert(data);
 				var newTerm = $( document.createElement('div') );
 				newTerm.text(data);
 				$('#results').append(newTerm);
