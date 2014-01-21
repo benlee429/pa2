@@ -18,6 +18,7 @@ $(document).ready(function() {
 	});
 });
 
-function ajaxFailure(request, status, error){
-	alert("ajax failure");
+function ajaxFailure(xhr, err){
+    alert("readyState: "+xhr.readyState+"\nstatus: "+xhr.status);
+    alert("responseText: "+xhr.responseText);
 }
