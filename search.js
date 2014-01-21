@@ -11,8 +11,7 @@ $(document).ready(function() {
 			error: ajaxFailure,
 			success: function(data){
 				alert(data);
-				var newTerm = $( document.createElement('div') );
-				newTerm.text = ("div text test");
+				var newTerm = $('<li class="suggesti">').text('Test message here');
 				$('#results').append(newTerm);
 			}
 		}) 
