@@ -8,30 +8,29 @@ using System.Diagnostics;
 using System.Web;
 using System.Web.Services;
 
-namespace MyTrieSpace
+
+[WebService(Namespace = "http://tempuri.org/")]
+[WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
+// To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line. 
+[System.Web.Script.Services.ScriptService]
+
+public class Search3 : System.Web.Services.WebService 
 {
-    [WebService(Namespace = "http://tempuri.org/")]
-    [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
-    // To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line. 
-    [System.Web.Script.Services.ScriptService]
-
-    public class Search3 : System.Web.Services.WebService
+    public Search3()
     {
-        public Search3()
-        {
-            //
-            // TODO: Add any constructor code required
-            //
-        }
+        //
+        // TODO: Add any constructor code required
+        //
+    }
 
-        // WEB SERVICE EXAMPLE
-        // The HelloWorld() example service returns the string Hello World.
+    // WEB SERVICE EXAMPLE
+    // The HelloWorld() example service returns the string Hello World.
 
-        [WebMethod]
-        public string GetQuery(string searchTerm)
-        {
-            string suggestions = "getquery test";
-            return suggestions;
-        }
+    [WebMethod]
+    public string GetQuery(string searchTerm)
+    {
+        string suggestions = "getquery test";
+        return suggestions;
     }
 }
+
